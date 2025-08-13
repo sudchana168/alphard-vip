@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.283790ed.css",
+    "main.js": "/static/js/main.e57a1b08.js",
+    "static/js/453.e8e454c1.chunk.js": "/static/js/453.e8e454c1.chunk.js",
+    "static/media/home2.png": "/static/media/home2.a042de6e520ba9cc7ba3.png",
+    "static/media/home1.png": "/static/media/home1.93041409db5791751a89.png",
+    "static/media/home3.png": "/static/media/home3.6ea1ff5d6857e2852a26.png",
+    "static/media/home4.png": "/static/media/home4.9610bd6c2120222e0c94.png",
+    "static/media/home5.png": "/static/media/home5.4329b66b3ee8671e6de4.png",
+    "static/media/alphard30.png": "/static/media/alphard30.4568a1dc59473afe90a1.png",
+    "static/media/wechat.jpg": "/static/media/wechat.c4f0c8a62e025a80835e.jpg",
+    "static/media/alphard40.jpeg": "/static/media/alphard40.f6b50875190045758c01.jpeg",
+    "static/media/line_off.PNG": "/static/media/line_off.1bb430a138328cabeb8c.PNG",
+    "static/media/whatsapp.JPG": "/static/media/whatsapp.9d6264faeb0ad35d153d.JPG",
+    "index.html": "/index.html",
+    "main.283790ed.css.map": "/static/css/main.283790ed.css.map",
+    "main.e57a1b08.js.map": "/static/js/main.e57a1b08.js.map",
+    "453.e8e454c1.chunk.js.map": "/static/js/453.e8e454c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.283790ed.css",
+    "static/js/main.e57a1b08.js"
+  ]
+}
