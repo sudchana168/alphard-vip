@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# ===========================
+# CONFIG
+# ===========================
+REPO_PATH="/var/www/vhosts/easyalphardbkk.com/repo"
+WEB_PATH="/var/www/vhosts/easyalphardbkk.com/httpdocs"
+BRANCH="main" # เปลี่ยนเป็น branch ที่ต้องการ deploy
+
+# ===========================
+# Helper for colored log
+# ===========================
+green() { echo -e "\033[32m$1\033[0m"; }
+yellow() { echo -e "\033[33m$1\033[0m"; }
+red() { echo -e "\033[31m$1\033[0m"; }
+blue() { echo -e "\033[34m$1\033[0m"; }
+
+# ===========================
+# Deployment script
+# ===========================
+blue "🚀 Starting deployment for easyalphardbkk.com at $(date)"
+
+cd "$REPO_PATH" || { red "❌ Repo path not found!"; exit 1; }
+
+yellow "📥 Pulling latest changes from $BRANCH..."
+git reset --hard
+git clean -fd
+git pull origin "$BRANCH" || { red "❌ Git pull failed!"; exit 1; }
+
+yellow "📦 Installing dependencies..."
+npm install --force || { red "❌ npm install failed!"; exit 1; }
+
+yellow "🛠 Building project..."
+npm run build || { red "❌ Build failed!"; exit 1; }
+
+yellow "📂 Deploying to $WEB_PATH..."
+rsync -av --delete "$REPO_PATH/build/" "$WEB_PATH/" || { red "❌ Deploy failed!"; exit 1; }
+
+green "✅ Deployment finished successfully at $(date)"

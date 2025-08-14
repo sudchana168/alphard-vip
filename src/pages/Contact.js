@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="qr-images">
           <div className="qr-item">
             <p>Line</p>
-            <a href="https://line.me/R/ti/p/@yourlineid" target="_blank" rel="noopener noreferrer">
+            <a href="https://lin.ee/tL51rl6" target="_blank" rel="noopener noreferrer">
               <img src={lineQR}  alt="Line QR" />
             </a>
           </div>
@@ -35,7 +35,7 @@ const Contact = () => {
           </div>
             <div className="qr-item">
             <p>WhatsApp</p>
-            <a href="https://web.wechat.com/your_wechat_id" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/66988991576?text=EasyAlphardBKKยินดีให้บริการคะ" target="_blank" rel="noopener noreferrer">
               <img src={whatsappQR} alt="Whatsapp QR" />
             </a>
           </div>

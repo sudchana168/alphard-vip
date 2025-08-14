@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="qr-links">
             {/* <h4>Follow us</h4> */}
             <div className="qr-icons">
-              <a href="https://line.me/R/ti/p/@yourlineid" target="_blank" rel="noopener noreferrer">
+              <a href="https://lin.ee/tL51rl6" target="_blank" rel="noopener noreferrer">
                 <img src={qrLine} alt="Line QR" />
               </a>
               {/* <a href="https://instagram.com/your_ig_username" target="_blank" rel="noopener noreferrer">
@@ -41,7 +41,7 @@ const Footer = () => {
               <a href="https://web.wechat.com" target="_blank" rel="noopener noreferrer">
                 <img src={qrWeChat} alt="WeChat QR" />
               </a>
-              <a href="https://web.wechat.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/66988991576?text=EasyAlphardBKKยินดีให้บริการคะ" target="_blank" rel="noopener noreferrer">
                 <img src={qrWhatsApp} alt="WhatsAPP QR" />
               </a>
             </div>
